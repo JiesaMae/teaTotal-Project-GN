@@ -1,0 +1,1916 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*all properties below are for Menu/Nav bar;*/
+.text-top {
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+    font-size: 12px;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav li .logo {
+    width: 250px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+nav {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+
+
+
+/*MENU BAR BREAKPOINTS*/
+@media (max-width:430px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    nav li {
+        height: 50px;
+
+    }
+
+    .cart-button {
+        margin-left: 0;
+
+    }
+
+    nav a {
+        height: 100%;
+        padding: 0px 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        font-size: 1rem;
+
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav li .logo {
+        width: 150px;
+    }
+
+    nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+
+
+@media (min-width:804px) {
+    nav li {
+        height: 50px;
+    }
+
+    nav a {
+        height: 100%;
+        padding: 0px 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        font-size: 0.8rem;
+    }
+
+    nav li .logo {
+        width: 180px;
+    }
+
+
+}
+
+
+
+@media (min-width:1215px) {
+    nav a {
+        height: 100%;
+        padding: 0px 25px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/*ABOUT US PROPERTIES*/
+
+@media (min-width:320px) {
+    .topic-two-content {
+        text-align: center;
+
+    }
+
+    .commitment-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+    }
+
+    .topic-two {
+        margin: 0 1rem;
+        padding: 1rem 0;
+
+    }
+
+    .commitment-label {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2rem;
+        font-weight: 5;
+        letter-spacing: 1px;
+    }
+
+    .quote-text {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 1rem;
+        padding: 3rem 2rem;
+
+    }
+
+    .quote-border {
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 2.5rem 0 8rem 0;
+    }
+
+    .content-two-title {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+
+    }
+
+    .content-two-top,
+    .content-two-body,
+    .commiment-body-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1.5rem 0;
+    }
+
+    .content-two-top {
+        margin-bottom: 0.5rem;
+    }
+
+    .topic-one-contents {
+        text-align: center;
+        margin: 0 1rem;
+    }
+
+    .image-container {
+        text-align: center;
+        padding: 1rem 0rem;
+
+    }
+
+    .content-images {
+        height: 200px;
+        width: 300px;
+
+    }
+
+    .content-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+    }
+
+    .content-title {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        padding-top: 1rem;
+    }
+
+    .content-one,
+    .content-two,
+    .topic-two-content {
+        margin: 0 1rem;
+
+    }
+
+    .about-text {
+        margin: 0 1rem;
+        padding: 2rem 0;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+    }
+
+    .topic-one {
+        margin: 0 1rem;
+        padding: 1rem 0;
+
+    }
+
+    .welcome-label {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2rem;
+        font-weight: 5;
+        letter-spacing: 1px;
+
+    }
+
+    .welcome-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+    }
+
+    .main-images {
+        height: 30vh;
+        width: 100vw;
+        padding: 1rem 0;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+
+    .commitment-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+
+    }
+
+    .quote-text {
+
+        padding: 5rem 5rem;
+    }
+
+    .quote-border {
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 3rem 0 15rem 0;
+    }
+
+    .topic-two-content {
+        text-align: center;
+        margin: 0 8rem;
+    }
+
+    .topic-two {
+        margin: 0 5rem;
+        padding: 1rem 0;
+
+    }
+
+    .content-two-top,
+    .content-two-body,
+    .commiment-body-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1.5rem 0;
+    }
+
+    .content-two-top {
+        margin-bottom: 1rem;
+    }
+
+    .content-two-title {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+
+    }
+
+    .topic-one-contents,
+    .content-two {
+        text-align: center;
+        margin: 0 8rem;
+    }
+
+    .content-images {
+        height: 320px;
+        width: 500px;
+
+
+    }
+
+    .image-container {
+        padding: 3rem 0;
+    }
+
+    .content-title {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        padding-top: 2rem;
+        padding-right: 1rem;
+    }
+
+    .content-one,
+    .topic-two {
+        margin: 0 25rem 0 3rem;
+
+    }
+
+    .main-images {
+        height: 60vh;
+        width: 100vw;
+        padding: 1rem 0;
+    }
+
+    .topic-one {
+        margin: 0 3rem 0 25rem;
+        padding: 1rem 0;
+
+    }
+
+    .welcome-label,
+    .commitment-label {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 1.5rem;
+        font-weight: 5;
+        letter-spacing: 1px;
+
+    }
+
+    .welcome-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+    }
+
+    .about-text {
+        margin: 0 3rem;
+        padding: 4rem 0;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 4rem;
+        letter-spacing: 5px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .commitment-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        padding: 5rem 5rem;
+    }
+
+    .quote-border {
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 3rem 0 15rem 0;
+    }
+
+    .topic-two-content {
+        text-align: center;
+        margin: 0 5rem;
+    }
+
+    .topic-two {
+        margin: 0 5rem;
+        padding: 1rem 0;
+
+    }
+
+    .content-two-top,
+    .content-two-body,
+    .commiment-body-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 2.5rem 0;
+    }
+
+    .content-two-top {
+        margin-bottom: 1rem;
+    }
+
+    .content-two-title {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+
+    }
+
+    .topic-one-contents,
+    .content-two {
+        text-align: center;
+        margin: 0 5rem;
+    }
+
+    .content-images {
+        height: 600px;
+        width: 850px;
+        padding: 3rem 0;
+
+    }
+
+    .content-title {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        padding-top: 2rem;
+        padding-right: 1rem;
+    }
+
+    .content-one,
+    .topic-two {
+        margin: 0 35rem 0 5rem;
+
+    }
+
+    .main-images {
+        height: 70vh;
+        width: 100vw;
+        padding: 1rem 0;
+    }
+
+    .topic-one {
+        margin: 0 5rem 0 35em;
+        padding: 1rem 0;
+
+    }
+
+    .welcome-label,
+    .commitment-label {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2rem;
+        font-weight: 5;
+        letter-spacing: 1px;
+
+    }
+
+    .welcome-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+    }
+
+    .about-text {
+        margin: 0 5rem;
+        padding: 4rem 0;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 5rem;
+        letter-spacing: 5px;
+    }
+}
+
+@media (min-width: 1220px) {
+
+    .topic-two-content {
+        text-align: center;
+        margin: 0 10rem;
+    }
+
+    .topic-two {
+        margin: 0 46rem 0 8rem;
+        padding: 1rem 0;
+
+    }
+
+    .content-two-top,
+    .content-two-body,
+    .commiment-body-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 3rem 0;
+        font-size: 1.5rem;
+
+    }
+
+    .content-two-top {
+        margin-bottom: 1rem;
+    }
+
+    .content-two-title {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+
+    }
+
+    .topic-one-contents,
+    .content-two {
+        text-align: center;
+        margin: 0 10rem;
+    }
+
+    .content-images {
+        height: 600px;
+        width: 850px;
+        padding: 2rem 0;
+
+    }
+
+    .content-title {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        padding-top: 2rem;
+        padding-right: 1rem;
+    }
+
+    .content-one {
+        margin: 0 30rem 0 8em;
+
+    }
+
+    .main-images {
+        height: 100vh;
+        width: 100vw;
+        padding: 1rem 0;
+    }
+
+    .topic-one {
+        margin: 0 8rem 0 46em;
+        padding: 1rem 0;
+
+    }
+
+    .commitment-text {
+        font-size: 1.5rem;
+    }
+
+    .welcome-label,
+    .commitment-label {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2.5rem;
+        font-weight: 5;
+        letter-spacing: 1px;
+
+    }
+
+    .welcome-text,
+    .content-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        margin: 0 8rem;
+        padding: 4rem 0;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 7rem;
+        letter-spacing: 5px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .image-container {
+        padding: 5rem 0;
+
+    }
+
+    .commitment-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 2.5rem 0;
+        font-size: 1.5rem;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        padding: 8rem 8rem;
+    }
+
+    .quote-border {
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 5rem 0 20rem 0;
+    }
+
+
+    .topic-two-content {
+        text-align: center;
+        margin: 0 20rem;
+    }
+
+    .topic-two {
+        margin: 0 5rem;
+        padding: 1rem 0;
+
+    }
+
+    .content-two-top,
+    .content-two-body,
+    .commiment-body-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 3rem 0;
+        font-size: 1.5rem;
+
+    }
+
+    .content-two-top {
+        margin-bottom: 1rem;
+    }
+
+    .content-two-title {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+
+
+    }
+
+    .topic-one-contents {
+        text-align: center;
+        margin: 0 20rem;
+    }
+
+    .content-images {
+        height: 750px;
+        width: 1000px;
+        text-align: center;
+
+
+
+    }
+
+    .content-title {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        padding-top: 5rem;
+        padding-right: 1rem;
+    }
+
+    .content-one,
+    .topic-two {
+        margin: 0 60rem 0 10rem;
+
+    }
+
+    .main-images {
+        height: 130vh;
+        width: 100vw;
+        padding: 1rem 0;
+    }
+
+    .topic-one {
+        margin: 0 10rem 0 60rem;
+        padding: 1rem 0;
+
+    }
+
+    .welcome-label,
+    .commitment-label {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 3.5rem;
+        font-weight: 5;
+        letter-spacing: 1px;
+
+    }
+
+    .welcome-text,
+    .content-text {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        margin: 2.5rem 0;
+    }
+
+    .about-text {
+        margin: 0 10rem;
+        padding: 4rem 0;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 10rem;
+        letter-spacing: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/*Properties below are for Body Contents*/
+
+
+.teaType-container {
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.teaType-productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 0fr));
+    justify-content: center;
+    margin: 2rem 4rem;
+    gap: 1rem;
+
+}
+
+.review-productGrid,
+.reward-productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 0fr));
+    justify-content: center;
+    margin: 2rem 4rem;
+    gap: 1rem;
+
+}
+
+
+
+.teaType-img {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+@media (min-width:320px) {
+    .top-link {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.2rem 1rem;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        background: none;
+        font-size: 1rem;
+        border: 1px solid #fff;
+        border-radius: 5px;
+
+
+    }
+
+
+
+    .top-button {
+        text-align: center;
+        margin: 1rem;
+        padding-top: 5rem;
+
+    }
+
+
+
+    .copyright {
+        color: #fff;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 8rem;
+
+    }
+
+    footer {
+        background: black;
+        padding: 2rem 0 2rem 0;
+
+    }
+
+    .footer-links {
+        margin: 1rem 1rem 0 1rem;
+        padding: 2rem;
+    }
+
+    .links {
+        padding: 0.5rem 0;
+        list-style: none;
+
+    }
+
+    .link-text {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+
+    }
+
+    .links::before {
+        color: #fff;
+        content: "\2022";
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .imageMedia-box:hover .media-slides {
+        animation-play-state: paused;
+    }
+
+    .media-slides {
+        display: inline-block;
+
+        animation: 35s slide infinite linear;
+    }
+
+    .imageMedia-box {
+        overflow: hidden;
+        white-space: nowrap;
+        padding-bottom: 2rem;
+    }
+
+
+    .imageMedia-box .imageMedia-img {
+        height: 150px;
+        margin: 0 1px;
+    }
+
+
+
+    .imageSlide-icon {
+        width: 2rem;
+
+    }
+
+    .imageSlide-text {
+        font-size: 1.2rem;
+        padding-top: 0.3rem;
+    }
+
+    .imageSlide-Container {
+        display: flex;
+        justify-content: space-between;
+        margin: 6rem 1rem 2rem 1rem;
+    }
+
+    .moreContent-container {
+        margin: 0 1rem;
+    }
+
+    .moreContent-card {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+
+    }
+
+    .moreContent-text {
+
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+
+
+
+    }
+
+    .moreContent-icon {
+        padding: 1rem 0 0.5rem 0;
+
+    }
+
+    .moreContent-head {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2.50rem;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        letter-spacing: 5px;
+    }
+
+    .moreContent-link {
+        list-style: none;
+        padding: 1rem 0 0.5rem 0;
+    }
+
+    .reward-container {
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 0rem 1rem;
+    }
+
+    .reward-head {
+        text-align: center;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        background: #e89024;
+        color: #fff;
+        padding: 0.6rem 0;
+        border-radius: 0px 100px / 80px;
+
+    }
+
+    .reward-text {
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+    }
+
+    .reward-card {
+        margin: 2rem 1rem 0 1rem;
+    }
+
+
+    .review-card {
+        background: radial-gradient(#df871c 30%, #f6b14a, #ffe4cc);
+
+    }
+
+    .reviews-text {
+        margin: 2rem 2.5rem;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 1.2rem;
+
+    }
+
+    .reviews-name {
+        margin: 2rem 3rem;
+        text-align: center;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 1.2rem;
+
+
+    }
+
+    .review-productGrid {
+        margin: 5rem 4rem;
+        gap: 1rem;
+
+    }
+
+    .teaType-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 0fr));
+        margin: 3rem 4rem;
+        padding: 0 2rem;
+        gap: 1rem;
+
+
+    }
+
+
+    .teaType-img {
+        width: 100%;
+    }
+
+    .hero-page {
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/hero-image-tea-overlay.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-top: 1rem;
+    }
+
+    .hero-page .hero-text {
+        margin: 1rem;
+        padding: 2rem 0;
+        color: #fff;
+        font-size: 2.8rem;
+    }
+
+    .image-overlay .hero-text {
+        padding-top: 2rem;
+    }
+
+    .tea-button {
+        display: flex;
+        justify-content: flex-end;
+        margin: 1rem;
+
+    }
+
+    .shop-tea {
+        padding: 0.2rem 1rem;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        background: none;
+        font-size: 1rem;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        color: #fff;
+
+    }
+
+    .headings {
+        text-align: center;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2.50rem;
+        padding-top: 100px;
+        letter-spacing: 5px;
+        margin: 0 2rem;
+
+
+    }
+
+    .headings-sub {
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+    }
+
+    .pair-one,
+    .pair-two,
+    .pair-three {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem;
+
+    }
+
+    .pair-one .main-img,
+    .pair-two .main-img,
+    .pair-three .main-img {
+        max-width: 240px;
+
+
+    }
+
+
+    .main-price {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        color: #e89024;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+
+    }
+
+    .main-labels {
+        margin: 10px 0;
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .shopNow-text,
+    .club-text {
+        padding: 0.2rem 1rem;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        background: none;
+        font-size: 1rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: black;
+    }
+
+    .more-text {
+        padding: 0.2rem 1rem;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        background: none;
+        font-size: 1rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: black;
+
+    }
+
+    .more-button,
+    .club-button {
+        display: flex;
+        justify-content: center;
+        margin: 3rem;
+    }
+
+
+    .personalityOne,
+    .personalityTwo {
+        min-height: 100vh;
+        width: 100vw;
+        display: grid;
+        position: relative;
+        align-items: end;
+        background-color: #e89024;
+        margin-top: 5rem;
+    }
+
+    .personality-img {
+        height: 50vh;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+
+
+    h2 {
+        color: #fff;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        margin: 1.5rem;
+        font-size: 2rem;
+
+    }
+
+    .teaType-labels {
+        font-size: 1.3rem;
+        color: black;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .teaType-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 0fr));
+        margin: 5rem 4rem;
+        padding: 0 2rem;
+        gap: 1rem;
+
+    }
+
+    .teaType-img {
+        width: 100%;
+    }
+
+    .review-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 0fr));
+        justify-content: center;
+        margin: 5rem 0rem;
+        gap: 0.5rem;
+
+    }
+
+    .reward-card {
+        margin-top: 2rem;
+    }
+
+    .reward-container {
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 0rem 4rem;
+    }
+
+    .moreContent-container {
+        margin: 0 3rem;
+    }
+
+
+    .imageSlide-Container {
+        display: flex;
+        justify-content: space-between;
+        margin: 6rem 3rem 2rem 3rem;
+    }
+
+    .imageMedia-box {
+        overflow: hidden;
+        white-space: nowrap;
+        padding-bottom: 2rem;
+
+    }
+
+
+    .imageMedia-box .imageMedia-img {
+        height: 170px;
+        margin: 0 1px;
+    }
+
+    .link-text {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        font-size: 1.5rem;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    .hero-page .hero-text {
+        margin: 5rem;
+        margin-bottom: 10px;
+        font-size: 4rem;
+    }
+
+    .hero-page .tea-button {
+        justify-content: flex-start;
+        margin: 3rem 5rem;
+    }
+
+
+
+    .parent {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .personalityOne,
+    .personalityTwo {
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e89024;
+
+    }
+
+    .personality-img {
+        height: 100vh;
+        width: 50vw;
+        display: block;
+        object-fit: cover;
+    }
+
+    .headings {
+        text-align: center;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        padding-top: 100px;
+        font-size: 4rem;
+        letter-spacing: 5px;
+        margin: 0 2rem;
+
+
+    }
+
+    .teaType-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 0fr));
+        margin: 5rem 4rem;
+        padding: 0 2rem;
+        gap: 1rem;
+
+    }
+
+    .teaType-img {
+        width: 100%;
+    }
+
+    .review-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 0fr));
+        justify-content: center;
+        margin: 5rem 0rem;
+        gap: 0.5rem;
+
+    }
+
+    .reward-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 0fr));
+        justify-content: center;
+        margin: 5rem 0rem;
+        gap: 0.5rem;
+
+    }
+
+    .reward-container {
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 0rem 5rem;
+    }
+
+    .reward-head {
+        text-align: center;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        background: #e89024;
+        color: #fff;
+        padding: 0.6rem 0;
+        border-radius: 0px 100px / 80px;
+
+    }
+
+    .reward-text {
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+    }
+
+    .reward-card {
+        margin-top: 2rem;
+    }
+
+    .moreContent-container {
+        margin: 0 5rem;
+    }
+
+
+    .moreContent-text {
+        list-style: none;
+        font-size: 2rem;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        padding: 1rem 0 0.5rem 0;
+
+
+    }
+
+    .moreContent-icon {
+        padding: 1rem 0 0.5rem 0;
+
+    }
+
+    .moreContent-head {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 4rem;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        letter-spacing: 5px;
+    }
+
+
+    .imageSlide-Container {
+        display: flex;
+        justify-content: space-between;
+        margin: 6rem 5rem 2rem 5rem;
+    }
+
+
+    .imageMedia-box {
+        overflow: hidden;
+        white-space: nowrap;
+        padding-bottom: 2rem;
+
+    }
+
+
+    .imageMedia-box .imageMedia-img {
+        height: 170px;
+        margin: 0 1px;
+    }
+
+    footer {
+        background: black;
+        padding: 2rem 0 2rem 0;
+
+    }
+
+    .footer-links {
+        margin: 0rem 0rem 0 5rem;
+        padding: 2rem;
+    }
+
+    .links {
+        padding: 0.5rem 0;
+        list-style: none;
+
+    }
+
+    .link-text {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        font-size: 2rem;
+
+    }
+}
+
+
+@media (min-width: 1220px) {
+    .headings {
+        text-align: center;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+
+        font-size: 5rem;
+        letter-spacing: 5px;
+        margin: 0 2rem;
+
+
+    }
+
+    .headings-sub {
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        font-size: 1.5rem;
+    }
+
+    .hero-page .hero-text {
+        margin: 8rem;
+        margin-bottom: 10px;
+        font-size: 5rem;
+    }
+
+    .hero-page .tea-button {
+        justify-content: flex-start;
+        margin: 3rem 8rem;
+    }
+
+    .shop-tea {
+        font-size: 1.5rem;
+        padding: 0.2rem 2rem;
+
+    }
+
+    .top-button {
+        text-align: center;
+        margin: 1rem;
+        padding-top: 5rem;
+
+    }
+
+
+    .top-link {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.2rem 1rem;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        background: none;
+        font-size: 1.5rem;
+        border: 1px solid #fff;
+        border-radius: 5px;
+
+
+    }
+
+    .parent {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .new-release {
+        font-size: 5rem;
+    }
+
+    .pair-one .main-img,
+    .pair-two .main-img,
+    .pair-three .main-img {
+        max-width: 420px;
+
+
+    }
+
+    .shopNow-text {
+        padding: 0.2rem 1rem;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        background: none;
+        font-size: 1.5rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: black;
+
+    }
+
+    .main-labels {
+        font-size: 1.5rem;
+
+    }
+
+    .personalityOne,
+    .personalityTwo {
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e89024;
+        margin-top: 7rem;
+
+    }
+
+    .personality-img {
+        height: 100vh;
+        width: 50vw;
+        display: block;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 4rem;
+        margin: 3rem;
+    }
+
+
+    .more-text,
+    .club-text {
+        padding: 0.2rem 1rem;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        background: none;
+        font-size: 1.5rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: black;
+
+    }
+
+    .more-button,
+    .club-button {
+        display: flex;
+        justify-content: center;
+        margin: 5rem 0 10rem 0;
+    }
+
+
+
+    .review-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 0fr));
+        justify-content: center;
+        margin: 7rem 0rem;
+        gap: 1rem;
+
+    }
+
+    .reward-container {
+        border: 1px solid black;
+        margin: 0rem 3rem;
+    }
+
+    .reward-head {
+        text-align: center;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2rem;
+        letter-spacing: 1px;
+        background: #e89024;
+        color: #fff;
+        padding: 0.6rem 0;
+        border-radius: 0px 100px / 80px;
+
+    }
+
+    .reward-text {
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .reward-card {
+        margin-top: 3rem;
+    }
+
+    .reward-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 0fr));
+        justify-content: center;
+        margin: 7rem 0rem;
+        gap: 2rem;
+
+    }
+
+    .imageSlide-icon {
+        width: 2.5rem;
+
+    }
+
+
+    .imageSlide-text {
+        font-size: 1.5rem;
+        padding-top: 0.3rem;
+    }
+
+    .imageSlide-Container {
+        display: flex;
+        justify-content: space-between;
+        margin: 6rem 5rem 2rem 5rem;
+    }
+
+
+
+    .imageMedia-box {
+        overflow: hidden;
+        white-space: nowrap;
+        padding-bottom: 2rem;
+
+    }
+
+
+    .imageMedia-box .imageMedia-img {
+        height: 200px;
+        margin: 0 1px;
+    }
+
+    .footer-links {
+        margin: 3rem 0rem 0 8rem;
+        padding: 2rem;
+    }
+
+    .links {
+        padding: 0.5rem 0;
+        list-style: none;
+
+    }
+
+    .link-text {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        font-size: 2rem;
+
+    }
+}
+
+
+@media (min-width: 1536px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .headings {
+        text-align: center;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 6rem;
+        letter-spacing: 5px;
+        margin: 0 2rem;
+
+
+    }
+
+    .headings-sub {
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        font-size: 2rem;
+    }
+
+    .personalityOne,
+    .personalityTwo {
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e89024;
+
+    }
+
+    .personality-img {
+        height: 100vh;
+        width: 50vw;
+        display: block;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 5rem;
+        margin: 3rem;
+    }
+
+    .teaType-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 0fr));
+        justify-content: center;
+        margin: 7rem 6rem;
+        padding: 0 3rem;
+        gap: 1rem;
+    }
+
+    .teaType-labels {
+        font-size: 2rem;
+    }
+
+    .more-text,
+    .club-text {
+        padding: 0.2rem 1rem;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        background: none;
+        font-size: 2rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: black;
+
+    }
+
+    .more-button,
+    .club-button {
+        display: flex;
+        justify-content: center;
+        margin: 9rem 0 10rem 0;
+    }
+
+    .shop-tea {
+        padding: 0.2rem 1rem;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        background: none;
+        font-size: 2rem;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        color: #fff;
+
+    }
+
+    .main-price {
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        color: #e89024;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+
+    .main-labels {
+        margin: 10px 0;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .shopNow-text {
+        padding: 0.2rem 1rem;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        background: none;
+        font-size: 2rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: black;
+    }
+
+    .review-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 0fr));
+        justify-content: center;
+        margin: 8rem 0rem;
+        gap: 2rem;
+
+    }
+
+    .reviews-text {
+        margin: 2rem 2.5rem;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2rem;
+
+
+    }
+
+    .reviews-name {
+        margin: 2rem 3rem;
+        text-align: center;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2rem;
+
+
+    }
+
+
+
+    .reward-container {
+        border: 1px solid black;
+        margin: 0rem 8rem;
+
+    }
+
+    .reward-head {
+        text-align: center;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 2rem;
+        letter-spacing: 1px;
+        background: #e89024;
+        color: #fff;
+        padding: 0.6rem 0;
+        border-radius: 0px 100px / 80px;
+
+    }
+
+    .reward-text {
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Open Sans', sans-serif, 'Arial';
+        margin: 1rem;
+        font-size: 2rem;
+    }
+
+    .reward-card {
+        margin-top: 3rem;
+    }
+
+    .reward-productGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 0fr));
+        justify-content: center;
+        margin: 7rem 0rem;
+        gap: 3rem;
+
+    }
+
+    .moreContent-container {
+        margin: 0 8rem;
+    }
+
+
+    .moreContent-text {
+        list-style: none;
+        font-size: 3rem;
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        padding: 2rem 0 1rem 0;
+
+
+    }
+
+    .moreContent-icon {
+        padding: 2rem 0 1rem 0;
+
+    }
+
+    .moreContent-head {
+        font-family: 'DM Serif Display', serif, 'Noto Serif', serif, 'Times New Romans';
+        font-size: 6rem;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        letter-spacing: 5px;
+    }
+
+    .imageSlide-icon {
+        width: 4rem;
+
+    }
+
+
+    .imageSlide-text {
+        font-size: 2.5rem;
+        padding-top: 0.3rem;
+    }
+
+    .imageSlide-Container {
+        display: flex;
+        justify-content: space-between;
+        margin: 9rem 8rem 2rem 8rem;
+    }
+
+
+
+
+    .imageMedia-box {
+        overflow: hidden;
+        white-space: nowrap;
+        padding-bottom: 2rem;
+
+    }
+
+
+    .imageMedia-box .imageMedia-img {
+        height: 280px;
+        margin: 0 1px;
+    }
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Total</title>
+    <link  rel="stylesheet" href="tea.css">
+</head>
+<body>
+    <p class="text-top">Free shipping for orders in NZ over $85</p>
+    
+<nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24"  fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a> </li>
+        <li><a href="#">Search &nbsp; <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="24" fill="white"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>
+        <li><a href="#">Sign In  &nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="24" fill="white"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></a></li>
+        <li><a href="aboutpage.html">About Us</a></li>
+        <li><a href="#">Products<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"  fill="white"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg></a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Tea Knowledge</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">More Info<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg></a><li>
+       
+     
+    </ul>
+    <ul class="">
+        <li> <a href="#top"><img class="logo" src="images/logo.png" alt="tea total logo"></a> </li>
+        <li class="hideOnMobile"><a href="aboutpage.html">About Us</a></li>
+        <li class="hideOnMobile"> <a href="#">Products<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg></a></li>
+        <li class="hideOnMobile"><a href="#">Best Sellers</a></li>
+        <li class="hideOnMobile"><a href="#">Sale</a></li>
+        <li class="hideOnMobile"><a href="#">More Info<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg></a><li>
+        <li class="hideOnMobile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>Search</a></li>
+        <li class="hideOnMobile"><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>Sign In/Register</a></li>
+        <li><a href="#"><svg class="cart-button" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>Cart</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>  
+</nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+            function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    
+<!--START OF BODY CONTENTS-->
+
+<div class="hero-page">
+    <h1 class="hero-text">Bringing only the highest quality premium tea.</h1>
+    <div class="tea-button">
+        <button class="shop-tea">SHOP TEAS</button>
+    </div>
+</div>
+   
+
+    
+<h1 class="headings">NEW RELEASE</h1>
+<h3 class="headings-sub">Limited & Rare Editions</h3>
+<div class="parent">
+    <section class="pair-one">
+        <img class="main-img" src="images/madam-grey.png" alt="madam grey tea in a bowl">
+        <h4  class="main-labels">Madam Grey </h4>
+        <p class="main-price">From $2.90</p>
+        <div class="shopNow-button">
+            <button class="shopNow-text">SHOP NOW</button>
+         </div>
+        </section>
+    <section class="pair-two">
+        <img class="main-img" src="images/vietnamese-goldenneedle.png" alt="vietnamese golden needle tea in a bowl">
+        <h4 class="main-labels">Vietnamese Golden Needle</h4>
+        <p class="main-price">From $2.90</p>
+        <div class="shopNow-button">
+            <button class="shopNow-text">SHOP NOW</button>
+         </div>
+    </section>
+    <section class="pair-three">
+        <img class="main-img" src="images/vietnamese-silverneedle.png" alt="vietnamese silver needle  tea in a bowl">
+        <h4 class="main-labels">Vietnamese Silver Needle</h4>
+        <p class="main-price">From $2.90</p>
+        <div class="shopNow-button">
+            <button class="shopNow-text">SHOP NOW</button>
+         </div>
+        </section>
+</div>
+
+<div class="personalityOne">
+    <div class="right">
+        <h2>Crafted with the finest local ingredients.</h2>
+    </div>
+    <div class="left">
+        <img class="personality-img"   src="images/spices-image.jpg" alt="four spoons eith different tea herbs and spices above a blue background">
+    </div>
+</div>
+
+<h1 class="headings">CHOOSE YOUR TEA TYPE</h1>
+<h3 class="headings-sub">Find the right one for you</h3>
+
+
+
+<!--TEA TYPE SELECTIONS-->
+<div class="teaType-container">
+   <div class="teaType-productGrid">
+        <section class="teaType-card">
+            <img  class="teaType-img" src="images/anti-stress-square.jpg" alt="image of dried lavender">
+            <h4><a class="teaType-labels" href="#">Anti-Stress</a></h4>
+        </section>
+        <section class="teaType-card">
+            <img  class="teaType-img" src="images/chai-style-square.jpg" alt="image of orange powder chai spices">
+            <h4><a class="teaType-labels" href="#">Chai Style</a></h4>
+        </section>
+        <section class="teaType-card">
+            <img  class="teaType-img" src="images/wellbeing-square.jpg" alt="image of dried tiny pink flowers">
+            <h4><a class="teaType-labels" href="#">Wellbeing</a></h4>
+        </section>
+        <section class="teaType-card">
+            <img  class="teaType-img" src="images/english-breakfast-square.jpg" alt=" image of dried black coloured tea leaves">
+            <h4><a class="teaType-labels" href="#">English Breakfast</a></h4>
+        </section>
+        <section class="teaType-card">
+            <img  class="teaType-img" src="images/caffeineFree-square.jpg" alt="image of dried chamomile flowers ">
+            <h4><a class="teaType-labels" href="#">Caffeine-Free</a></h4>
+        </section>
+        <section class="teaType-card">
+            <img  class="teaType-img" src="images/icedtea-square.jpg" alt="image of dried lemon">
+            <h4><a class="teaType-labels" href="#">Iced Tea</a></h4>
+        </section>
+
+   </div>      
+</div>
+
+<div class="more-button">
+  <button class="more-text">SHOW MORE</button>
+ </div>
+
+
+<div class="personalityTwo">
+    <div class="right">
+        <h2>Hand processed and packaged by our awesome team in our warehouse on Auckland's North Shore.</h2>
+    </div>
+    <div class="left">
+        <img class="personality-img" src="images/packaging-process-390x390.jpg" alt="four spoons eith different tea herbs and spices above a blue background">
+    </div>
+</div>
+
+<!--CUSTOMER REVIEWS-->
+<div class="reviews-container">
+    <div class="review-productGrid">
+        <section class="review-card">
+            <h4 class="reviews-text">What a gorgeous store and DELICIOUS teas. Amazing! Incredibly knowledgable staff. 
+                Looking forward to working through some of the 150 plus teas they have!</h4>
+            <p class="reviews-name">Mish</p>
+            </section>
+        <section class="review-card">
+            <h4 class="reviews-text">My go to for my earl grey cream tea is Tea Total it is the freshest and tastiest tea I have ever tried.</h4>
+            <p class="reviews-name">Lynda</p>
+        </section>
+        <section class="review-card">
+            <h4 class="reviews-text">Great selection of Teas, fast post and a nice rewards system. I have been a customer of Tea Total for
+                 a few years now. I  find their products to be of excellent quality.</h4>
+            <p class="reviews-name">Scotane</p>
+            </section>
+    </div>
+</div>
+
+<!--TEA TOTAL REWARD-->
+<div class="reward-container">
+   <h1 class="headings">TEA TOTAL CLUB</h1>
+   <h3 class="headings-sub">Earn points to redeem rewards</h3>
+   <div class="reward-productGrid">
+    <section class="reward-card">
+        <h3 class="reward-head">1. Join Tea Club</h3>
+         <p class="reward-text">Create an account and subscribe to our newsletter.</p>
+    </section>
+      <section class="reward-card">
+         <h3 class="reward-head">2. Earn Points</h3>
+          <p class="reward-text">For every $25 spent you will earn you 1 Tea Point.</p>
+      </section>
+ 
+       <section class="reward-card">
+         <h3 class="reward-head">3. Redeem Rewards</h3>
+          <p class="reward-text">Use Tea Points to redeem Rewards.</p>
+       </section>
+   </div>
+   <div class="club-button">
+    <button class="club-text">VISIT TEA TOTAL CLUB</button>
+ </div>
+</div>
+
+
+<!--MORE ON TEA TOTAL-->
+<div class="moreContent-container">
+    <h3 class="moreContent-head">More on Tea Total</h3>
+  <ul class="moreContent-card">
+   <li class="moreContent-link"><a class="moreContent-text" href="#">Tea Knowledge</a></li>
+   <li class="moreContent-link"><a href="#"><div class="moreContent-icon" ><svg xmlns="http://www.w3.org/2000/svg"  height="35" viewBox="0 -960 960 960" width="35"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg></div></a></li>
+ </ul>
+ <ul class="moreContent-card">
+    <li class="moreContent-link"><a class="moreContent-text" href="#">Tea Tasting</a></li>
+    <li class="moreContent-link"><a href="#"><div class="moreContent-icon" ><svg xmlns="http://www.w3.org/2000/svg"  height="35" viewBox="0 -960 960 960" width="35"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg></div></a></li>
+  
+</ul>
+<ul class="moreContent-card">
+    <li class="moreContent-link"><a class="moreContent-text" href="#">Concept Store</a></li>
+    <li class="moreContent-link"><a href="#"><div class="moreContent-icon" ><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg></div></a></li>
+</ul>
+</div>
+
+<div class="imageSlide-Container">
+    <p class="imageSlide-text">@teatotalnz</p>
+    <div class="imagesSlide-children">
+       <img class="imageSlide-icon" src="images/facebook_1384005.png" alt="facebook logo">
+       <img class="imageSlide-icon" src="images/instagram_1384015.png" alt="instagram logo">
+       <img class="imageSlide-icon" src="images/youtube_1384012.png" alt="youtube logo">
+    </div>
+</div>
+
+<!--SOCIAL MEDIA CAROUSEL-->
+    <div class="imageMedia-box">
+        <div class="media-slides">
+            <img class="imageMedia-img" src="images/igpost-one.jpg" alt="pouring milk on a tea">
+            <img class="imageMedia-img" src="images/igpost-two.jpg" alt="cup of tea in daylight">
+            <img class="imageMedia-img" src="images/igpost-three.jpg" alt="tea total clipboard and plate of spices on a table">
+            <img class="imageMedia-img" src="images/igpost-four.jpg" alt="a tea and coffee collaboration with tea total">
+            <img class="imageMedia-img" src="images/igpost-five.jpg" alt="lady pouring tea while sitting down">
+            <img class="imageMedia-img" src="images/igpost-six.jpg" alt="four tea total tins stacking on top of two tins">
+            <img class="imageMedia-img" src="images/igpost-one.jpg" alt="pouring milk on a tea">
+            <img class="imageMedia-img" src="images/igpost-two.jpg" alt="cup of tea in daylight">
+            <img class="imageMedia-img" src="images/igpost-three.jpg" alt="tea total clipboard and plate of spices on a table">
+            <img class="imageMedia-img" src="images/igpost-four.jpg" alt="a tea and coffee collaboration with tea total">
+            <img class="imageMedia-img" src="images/igpost-five.jpg" alt="lady pouring tea while sitting down">
+            <img class="imageMedia-img" src="images/igpost-six.jpg" alt="four tea total tins stacking on top of two tins">
+        </div>
+        <div class="media-slides">
+            <img class="imageMedia-img" src="images/igpost-one.jpg" alt="pouring milk on a tea">
+            <img class="imageMedia-img" src="images/igpost-two.jpg" alt="cup of tea in daylight">
+            <img class="imageMedia-img" src="images/igpost-three.jpg" alt="tea total clipboard and plate of spices on a table">
+            <img class="imageMedia-img" src="images/igpost-four.jpg" alt="a tea and coffee collaboration with tea total">
+            <img class="imageMedia-img" src="images/igpost-five.jpg" alt="lady pouring tea while sitting down">
+            <img class="imageMedia-img" src="images/igpost-six.jpg" alt="four tea total tins stacking on top of two tins">
+            <img class="imageMedia-img" src="images/igpost-one.jpg" alt="pouring milk on a tea">
+            <img class="imageMedia-img" src="images/igpost-two.jpg" alt="cup of tea in daylight">
+            <img class="imageMedia-img" src="images/igpost-three.jpg" alt="tea total clipboard and plate of spices on a table">
+            <img class="imageMedia-img" src="images/igpost-four.jpg" alt="a tea and coffee collaboration with tea total">
+            <img class="imageMedia-img" src="images/igpost-five.jpg" alt="lady pouring tea while sitting down">
+            <img class="imageMedia-img" src="images/igpost-six.jpg" alt="four tea total tins stacking on top of two tins">
+        </div>
+      </div>
+
+<!--FOOTER LAYOUT-->
+<footer>
+    <ul class="footer-links">
+        <li class="links"><a class="link-text" href="#">About Us</a></li>
+        <li class="links"><a class="link-text" href="#">Contact Us</a></li>
+        <li class="links"><a class="link-text" href="#">FAQs</a></li>
+        <li class="links"><a class="link-text" href="#">Loyalty Program</a></li>
+        <li class="links"><a class="link-text" href="#">Shipping & Delivery</a></li>
+        <li class="links"><a class="link-text" href="#">Refund policy</a></li>
+        <li class="links"><a class="link-text" href="#">Terms of Service</a></li>
+    </ul>
+    <div class="top-button">
+       <a class="top-link" href="#top">BACK TO THE TOP</a>
+     </div>
+    <p class="copyright">Copyright 2023 Tea Total</p>
+</footer>
+
+</body>
+</html>
